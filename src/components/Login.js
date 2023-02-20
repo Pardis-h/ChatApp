@@ -12,7 +12,7 @@ const Login = () => {
     return (
         <div className={styles.loginPage}>
             <div className={styles.loginCard}>
-                <h2>Wellcome to Pasgram!</h2>
+                <h2>Wellcome to PasChat!</h2>
                 <div 
                     onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider() ) }
                     className={styles.button}>
