@@ -14,7 +14,6 @@ const AuthContextProvider = ({children}) => {
         auth.onAuthStateChanged(user => {
             setUser(user);
             setLoading(false);
-            console.log(user)
             if(user) history.push('/chats')
         })
     },[user, history])
